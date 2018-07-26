@@ -64,7 +64,7 @@ addTransaction('May-29', +2200)
 
 // Add function to show balance status
 function showBalanceStatus(balance) {
-	console.log(`Balance: ${balance}`);
+	console.log(`Final Balance: ${balance}`);
 	if (balance < 0) {
 		console.log('You are overdrawn!');
 	} else if (0 < balance && balance < 20) {
@@ -86,7 +86,7 @@ function showTransactions(acctTransactions, begBalance) {
 		}
 		console.log(`Amount changed: ${amt}`);
 		begBalance += amt;
-		console.log(`Balance: ${begBalance}`);
+		console.log(`Current Balance: ${begBalance}`);
 	}
 	showBalanceStatus(begBalance);
 }
